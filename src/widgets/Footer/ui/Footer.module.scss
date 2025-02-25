@@ -1,0 +1,53 @@
+.footer {
+  flex: 0 0 auto;
+  padding: 45px;
+  background: var(--color-bg-footer);
+  & a {
+    display: inline-block;
+    height: 100%;
+  }
+}
+
+.footercontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.social {
+  & a {
+    margin-left: 20px;
+  }
+}
+
+.policy {
+  width: 185px;
+  font-size: var(--font-text-size-small);
+  line-height: 143%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  text-align: center;
+  opacity: 0.7;
+  transition: 0.4s;
+  cursor: pointer;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.policytitle {
+  font-weight: 600;
+  font-size: var(--font-header2-size);
+  line-height: 120%;
+}
+
+.paragraph:not(:last-of-type) {
+  margin-bottom: 65px;
+}
+
+.paragraphtitle {
+  margin: 35px 0 25px;
+  font-weight: 600;
+  font-size: var(--font-text-size-small);
+  line-height: 150%;
+}

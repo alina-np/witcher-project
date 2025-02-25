@@ -2,9 +2,11 @@ html {
   --color-font-primary: #ffffff;
   --color-font-secondary: #ff5858;
   --color-bg-body: #181818;
+  --color-bg-footer: #343338;
   --color-bg-button-default: #ec3f3f;
   --color-bg-button-hover: #ff1e1e;
   --color-border-button: 1px solid rgba(236, 63, 63, 0.8);
+  --color-shadow-button: 0 2px 24px 0 rgba(255, 30, 30, 0.5);
   --color-input-default: rgba(255, 255, 255, 0.1);
   --color-input-error: rgba(236, 63, 63, 0.2);
   --font-header1-size: 56px;
@@ -12,6 +14,6 @@ html {
   --font-header3-size: 32px;
   --font-header4-size: 24px;
   --font-text-size: 16px;
-  --font-link-size: 14px;
+  --font-text-size-small: 14px;
   --font-text-family: "Futura PT Book", sans-serif;
 }

@@ -1,6 +1,6 @@
 const MainPage = () => {
     return ( 
-        <div>Сериал Ведьмак</div>
+        <div className="main">Сериал Ведьмак</div>
      );
 }
 

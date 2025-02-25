@@ -35,14 +35,12 @@ a {
   min-height: 100vh;
 }
 
-.header {
-  flex: 0 0 auto;
-}
-
 .main {
   flex: 1 0 auto;
 }
 
-.footer {
-  flex: 0 0 auto;
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
 }
