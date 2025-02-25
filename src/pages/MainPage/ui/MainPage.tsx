@@ -1,6 +1,10 @@
+import { SeeSerial } from "widgets/SeeSerial";
+
 const MainPage = () => {
     return ( 
-        <div className="main">Сериал Ведьмак</div>
+        <main className="main">
+            <SeeSerial />
+        </main>
      );
 }
 

@@ -9,7 +9,7 @@ export function Footer() {
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <footer className={`${styles.footer}`}>
+    <footer className={styles.footer}>
       <div className={`${styles.footercontainer} container`}>
         <div className={styles.logo}>
           <img src={logoimg} alt="Лого" />

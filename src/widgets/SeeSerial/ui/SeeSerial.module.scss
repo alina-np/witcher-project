@@ -1,0 +1,22 @@
+.seeserial {
+  width: 100%;
+  height: 440px;
+  background: url("./cover.jpg") no-repeat;
+  opacity: 0.8;
+  & .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.title {
+  font-weight: 600;
+  font-size: var(--font-header1-size);
+  line-height: 100%;
+}
+
+.desc {
+  margin: 25px 0 40px;
+}
