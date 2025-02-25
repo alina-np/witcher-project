@@ -1,9 +1,24 @@
 @use "./variables.scss";
+@use "./fonts.scss";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background: var(--color-bg-body);
+  color: var(--color-font-primary);
+  font-family: var(--font-text-family);
+  font-weight: 400;
+  font-size: var(--font-text-size);
+  line-height: 125%;
+}
+
+a {
+  color: var(--color-font-primary);
 }
 
 :active,
@@ -15,5 +30,19 @@
 }
 
 .app {
-    background: var(--color-main);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  flex: 0 0 auto;
+}
+
+.main {
+  flex: 1 0 auto;
+}
+
+.footer {
+  flex: 0 0 auto;
 }

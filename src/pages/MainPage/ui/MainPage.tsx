@@ -1,6 +1,6 @@
 const MainPage = () => {
     return ( 
-        <div>Главная</div>
+        <div>Сериал Ведьмак</div>
      );
 }
 
