@@ -44,3 +44,9 @@ a {
   max-width: 1200px;
   margin: 0 auto;
 }
+
+h2 {
+  font-weight: 600;
+  font-size: var(--font-header2-size);
+  line-height: 120%;
+}

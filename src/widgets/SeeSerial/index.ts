@@ -1,1 +1,1 @@
-export { SeeSerial } from "./ui/SeeSerial";
+export { SeeSerialSection } from "./ui/SeeSerialSection";

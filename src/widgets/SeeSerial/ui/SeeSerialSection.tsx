@@ -1,7 +1,7 @@
 import { AppLink, AppLinkTheme } from "shared/ui";
-import styles from "./SeeSerial.module.scss";
+import styles from "./SeeSerialSection.module.scss";
 
-export function SeeSerial() {
+export function SeeSerialSection() {
   return (
     <section className={styles.seeserial}>
       <div className={`${styles.container} container`}>

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import styles from "./Footer.module.scss";
-import { AppLink, Icon, IconType, IconTheme } from "shared/ui";
-import { Modal } from "widgets/Modal";
+import { AppLink, Icon, IconType, IconTheme, Modal } from "shared/ui";
 import logoimg from "../../../shared/assets/images/logo.png";
 import { policy } from "shared/text/policy";
 
