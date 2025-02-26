@@ -25,7 +25,7 @@ export type IconProps = {
   theme?: IconTheme;
 };
 
-export function Icon({ type, theme }: IconProps) {
+export function Icon({ type, theme, ...otherProps }: IconProps) {
   const iconMap = {
     [IconType.INSTAGRAM]: Instagram,
     [IconType.VK]: Vk,
@@ -37,5 +37,5 @@ export function Icon({ type, theme }: IconProps) {
 
   const IconComponent = iconMap[type];
 
-  return <IconComponent className={`&{styles.icon} ${styles[theme]}`} />;
+  return <IconComponent className={`${styles.icon} ${styles[theme]}`} {...otherProps} />;
 }

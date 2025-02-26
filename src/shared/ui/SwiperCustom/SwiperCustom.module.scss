@@ -1,0 +1,25 @@
+.navigation {
+  position: absolute;
+  top: 0px;
+  right: 0;
+  display: flex;
+  gap: 15px;
+}
+
+.prevButton {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  &:hover path {
+    fill: var(--color-bg-button-hover);
+  }
+}
+
+.nextButton {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  &:hover path {
+    fill: var(--color-bg-button-hover);
+  }
+}

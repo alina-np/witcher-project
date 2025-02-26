@@ -1,16 +1,11 @@
 .icon {
-  cursor: pointer;
   transition: 0.4s;
-  &:hover {
-    transform: scale(1.2);
-  }
+  cursor: pointer;
 }
 
 .social {
   border-radius: 50%;
   background: transparent;
-  transition: 0.4s;
-  cursor: pointer;
   & path {
     transition: 0.4s;
   }
@@ -22,7 +17,8 @@
   }
 }
 
-.navigation {
-  transition: 0.4s;
-  cursor: pointer;
+.navigation svg {
+  &:hover path {
+    fill: var(--color-bg-button-hover);
+  }
 }

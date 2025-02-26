@@ -1,3 +1,62 @@
 .actors {
-    
+  margin-bottom: 70px;
+}
+
+.card {
+  position: relative;
+  transition: 0.4s;
+  cursor: pointer;
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 101%;
+    height: 100%;
+    background: transparent;
+    transition: 0.4s;
+  }
+  &:hover {
+    &::before {
+      background: linear-gradient(
+        180deg,
+        rgba(0, 0, 0, 0.4) 0%,
+        rgba(0, 0, 0, 0.8) 100%
+      );
+    }
+    & .text {
+      transform: translateY(-290px);
+    }
+    & .desc {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+}
+
+.text {
+  position: absolute;
+  left: 24px;
+  bottom: 30px;
+  transition: 0.4s;
+}
+
+.name {
+  font-weight: 600;
+  font-size: var(--font-header4-size);
+  line-height: 133%;
+}
+
+.actor {
+  font-size: var(--font-header4-size);
+}
+
+.desc {
+  width: 225px;
+  position: absolute;
+  left: 24px;
+  bottom: 30px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.4s;
 }
