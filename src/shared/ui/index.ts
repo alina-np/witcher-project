@@ -1,3 +1,4 @@
+export { Loader } from "./Loader/ui/Loader";
 export { Modal } from "./Modal";
 export { AppLink, AppLinkTheme } from "./AppLink/AppLink";
 export { Button, ButtonTheme } from "./Button/Button";
