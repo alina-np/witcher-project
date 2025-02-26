@@ -47,3 +47,13 @@
     background: var(--color-bg-button-hover);
   }
 }
+
+@media (max-width: 767px) {
+  .color {
+    width: 186px;
+    height: 48px;
+  }
+  .opacitythin {
+    width: 210px;
+  }
+}

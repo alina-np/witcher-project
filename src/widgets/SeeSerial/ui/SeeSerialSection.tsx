@@ -3,14 +3,12 @@ import styles from "./SeeSerialSection.module.scss";
 import cover from "./cover.jpg";
 
 export function SeeSerialSection() {
+  const stylesObj = {
+    backgroundImage: `linear-gradient(270deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(${cover})`,
+  };
+
   return (
-    <section
-      className={styles.seeserial}
-      style={{
-        background: `linear-gradient(270deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(${cover})`,
-        backgroundSize: "cover",
-      }}
-    >
+    <section className={styles.seeserial} style={stylesObj}>
       <div className={`${styles.container} container`}>
         <h1 className={styles.title}>Сериал Ведьмак</h1>
         <p className={styles.desc}>

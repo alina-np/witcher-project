@@ -62,3 +62,36 @@
   visibility: hidden;
   transition: 0.4s;
 }
+
+@media (max-width: 1024px) {
+  .actors {
+    margin-bottom: 50px;
+  }
+  .card:hover {
+    & .text {
+      transform: translateY(-265px);
+    }
+  }
+  .text,
+  .desc {
+    left: 15px;
+  }
+}
+
+@media (max-width: 767px) {
+  .actors {
+    margin-bottom: 60px;
+  }
+  .text,
+  .desc {
+    bottom: 23px;
+  }
+  .desc {
+    width: 90%;
+  }
+  .card:hover {
+    & .text {
+      transform: translateY(-200px);
+    }
+  }
+}

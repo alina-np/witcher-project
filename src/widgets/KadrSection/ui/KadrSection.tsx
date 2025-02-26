@@ -33,7 +33,7 @@ export function KadrSection() {
       {loading && <Loader />}
       {count < photos.length && (
         <Button onClick={handleLoadMore} theme={ButtonTheme.OPACITYBIG}>
-          Загрузить еще
+          Показать еще
         </Button>
       )}
     </section>

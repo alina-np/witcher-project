@@ -46,8 +46,41 @@
 }
 
 .paragraphtitle {
-  margin: 35px 0 25px;
+  margin: 35px 0 20px;
   font-weight: 600;
   font-size: var(--font-text-size-small);
   line-height: 150%;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding: 45px 65px;
+  }
+  .footercontainer {
+    padding: 0;
+  }
+  .paragraphtitle {
+    margin: 30px 0 20px;
+  }
+  .paragraph:not(:last-of-type) {
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    padding: 20px 15px;
+  }
+  .footercontainer {
+    flex-wrap: wrap;
+  }
+  .policy {
+    width: auto;
+    order: 3;
+  }
+  .social {
+    & a {
+      margin-left: 13px;
+    }
+  }
 }

@@ -20,7 +20,20 @@ export function SwiperCustom({ children }: SwiperProps) {
       modules={[Pagination, Navigation]}
       ref={swiperRef}
       spaceBetween={24}
-      slidesPerView={4}
+      breakpoints={{
+        320: {
+          slidesPerView: 1,
+        },
+        768: {
+          slidesPerView: 2,
+        },
+        1024: {
+          slidesPerView: 3,
+        },
+        1250: {
+          slidesPerView: 4,
+        },
+      }}
     >
       <div className="pagination" />
       {children}

@@ -1,10 +1,30 @@
 .shop {
-    margin-bottom: 90px;
+  margin-bottom: 90px;
 }
 
 .map {
-    margin-top: 40px;
-    filter: grayscale(100%) brightness(0.7);
-    opacity: 0.9;
+  margin-top: 40px;
+  filter: grayscale(100%) brightness(0.7);
+  opacity: 0.9;
 }
 
+@media (max-width: 1024px) {
+  .shop {
+    margin-bottom: 0;
+  }
+  .map {
+    margin-top: 25px;
+  }
+  iframe {
+    width: 100vw;
+    height: 400px;
+    transform: translateX(-65px);
+  }
+}
+
+@media (max-width: 767px) {
+  iframe {
+    height: 400px;
+    transform: translateX(-15px);
+  }
+}

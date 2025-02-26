@@ -9,11 +9,34 @@ html {
   --color-shadow-button: 0 2px 24px 0 rgba(255, 30, 30, 0.5);
   --color-input-default: rgba(255, 255, 255, 0.1);
   --color-input-error: rgba(236, 63, 63, 0.2);
-  --font-header1-size: 56px;
-  --font-header2-size: 40px;
-  --font-header3-size: 32px;
-  --font-header4-size: 24px;
   --font-text-size: 16px;
   --font-text-size-small: 14px;
   --font-text-family: "Futura PT Book", sans-serif;
+}
+
+@media (min-width: 1200px) {
+  html {
+    --font-header1-size: 56px;
+    --font-header2-size: 40px;
+    --font-header3-size: 32px;
+    --font-header4-size: 24px;
+  }
+}
+
+@media (max-width: 1339px) {
+  html {
+    --font-header1-size: 40px;
+    --font-header2-size: 32px;
+    --font-header3-size: 24px;
+    --font-header4-size: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  html {
+    --font-header1-size: 32px;
+    --font-header2-size: 28px;
+    --font-header3-size: 24px;
+    --font-header4-size: 16px;
+  }
 }
