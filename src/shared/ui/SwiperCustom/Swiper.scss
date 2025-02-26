@@ -58,4 +58,7 @@
 .swiper-button-disabled {
   filter: grayscale(1);
   cursor: auto;
+  &:hover {
+    filter: grayscale(1);
+  }
 }

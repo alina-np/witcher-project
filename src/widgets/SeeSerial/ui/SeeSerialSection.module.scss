@@ -1,13 +1,6 @@
 .seeserial {
   width: 100%;
   height: 440px;
-  background: linear-gradient(
-      270deg,
-      rgba(0, 0, 0, 0.4) 0%,
-      rgba(0, 0, 0, 0.4) 100%
-    ),
-    url("./cover.jpg") no-repeat;
-  opacity: 0.8;
   & .container {
     height: 100%;
     display: flex;
