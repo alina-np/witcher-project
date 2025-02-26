@@ -11,6 +11,7 @@
   justify-content: center;
   align-items: center;
   background: var(--color-bg-button-default);
+  font-weight: 600;
   &:hover {
     box-shadow: var(--color-shadow-button);
     background: var(--color-bg-button-hover);
@@ -25,6 +26,7 @@
   align-items: center;
   border: var(--color-border-button);
   background: rgba(236, 63, 63, 0.1);
+  font-weight: 600;
   &:hover {
     box-shadow: var(--color-shadow-button);
     background: var(--color-bg-button-hover);
@@ -39,6 +41,7 @@
   align-items: center;
   background: rgba(236, 63, 63, 0.15);
   border: var(--color-border-button);
+  font-weight: 600;
   &:hover {
     box-shadow: var(--color-shadow-button);
     background: var(--color-bg-button-hover);

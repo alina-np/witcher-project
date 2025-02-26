@@ -11,7 +11,6 @@ export function SeeSerialSection() {
         backgroundSize: "cover",
       }}
     >
-      {/* <img src={cover} alt="" /> */}
       <div className={`${styles.container} container`}>
         <h1 className={styles.title}>Сериал Ведьмак</h1>
         <p className={styles.desc}>
