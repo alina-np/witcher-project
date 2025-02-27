@@ -8,7 +8,7 @@
   margin-bottom: 30px;
   & label {
     position: absolute;
-    top: 17px;
+    top: 15px;
     left: 23px;
     opacity: 0.4;
     transition: 0.4s transform;
@@ -35,6 +35,12 @@
         transform: translateY(-10px);
         font-size: 12px;
       }
+    }
+    &:-webkit-autofill,
+    :-webkit-autofill:hover,
+    :-webkit-autofill:focus {
+      -webkit-text-fill-color: #fff;
+      -webkit-box-shadow: 0 0 0px 40rem #181818 inset;
     }
   }
   & textarea {
@@ -134,6 +140,7 @@ select.errorinput {
       align-items: center;
       opacity: 1;
       transform: none;
+      transition: none;
       cursor: pointer;
       &::before {
         content: "";
@@ -245,6 +252,9 @@ select.errorinput {
 }
 
 @media (max-width: 767px) {
+  .form {
+    width: 100%;
+  }
   .success {
     width: 100%;
     margin-top: 0;

@@ -1,24 +1,10 @@
 import styles from "./KadrSection.module.scss";
-import { useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { loadMore } from "../models/redux/reducers/gallerySlice";
-import { RootState } from "../models/redux/store";
 import { Button, ButtonTheme, Loader } from "shared/ui";
+import { useGallery } from "shared/hooks/useGallery";
 
 export function KadrSection() {
-  const [loading, setLoading] = useState(false);
-  const dispatch = useDispatch();
-  const { photos, count } = useSelector((state: RootState) => state.gallery);
-
-  const handleLoadMore = () => {
-    setLoading(true);
-    setTimeout(() => {
-      dispatch(loadMore());
-      setLoading(false);
-    }, 1500);
-  };
-
-  const displayedPhotos = photos.slice(0, count);
+  const { displayedPhotos, loading, handleLoadMore, showLoadMoreButton } =
+    useGallery();
 
   return (
     <section className={`${styles.kadr} container`}>
@@ -31,7 +17,7 @@ export function KadrSection() {
         ))}
       </div>
       {loading && <Loader />}
-      {count < photos.length && (
+      {showLoadMoreButton && (
         <Button onClick={handleLoadMore} theme={ButtonTheme.OPACITYBIG}>
           Показать еще
         </Button>

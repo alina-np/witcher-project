@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
+import { Controller } from "react-hook-form";
 import { useDispatch } from "react-redux";
 import {
   setFormData,
@@ -15,11 +16,12 @@ export function useFormHandler() {
     register,
     handleSubmit,
     reset,
+    control,
     formState: { errors },
   } = useForm<FormStateItem>({
     shouldFocusError: false,
     defaultValues: {
-      selectField: null,
+      phone: "",
     },
   });
 
@@ -37,6 +39,7 @@ export function useFormHandler() {
     register,
     handleSubmit,
     onSubmit,
+    control,
     loading,
     isSubmitted,
     errors,

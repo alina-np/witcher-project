@@ -37,5 +37,10 @@ export function Icon({ type, theme, ...otherProps }: IconProps) {
 
   const IconComponent = iconMap[type];
 
-  return <IconComponent className={`${styles.icon} ${styles[theme]}`} {...otherProps} />;
+  return (
+    <IconComponent
+      className={`${styles.icon} ${styles[theme]}`}
+      {...otherProps}
+    />
+  );
 }

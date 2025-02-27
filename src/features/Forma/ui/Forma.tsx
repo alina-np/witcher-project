@@ -1,33 +1,32 @@
 import styles from "./Forma.module.scss";
 import { useFormHandler } from "shared/hooks/useFormaHandler";
-import {
-  AppLink,
-  AppLinkTheme,
-  Button,
-  ButtonTheme,
-  Icon,
-  IconType,
-  Loader,
-} from "shared/ui";
+import { Button, ButtonTheme, Icon, IconType, Loader } from "shared/ui";
+import { FormaSuccess } from "./FormaSucces";
+import { IMaskInput } from "react-imask";
+import { Controller } from "react-hook-form";
 
 export function Forma() {
-  const { register, handleSubmit, onSubmit, loading, isSubmitted, errors } =
-    useFormHandler();
+  const {
+    register,
+    handleSubmit,
+    onSubmit,
+    control,
+    loading,
+    isSubmitted,
+    errors,
+  } = useFormHandler();
 
   if (isSubmitted) {
-    return (
-      <div className={styles.success}>
-        <h1>Заявка отправлена!</h1>
-        <p>
-          Мы получили вашу заявку. Наши специалисты свяжутся с вами в ближайшее
-          время, чтобы уточнить все детали заказа.
-        </p>
-        <AppLink theme={AppLinkTheme.COLOR} to="/">
-          Вернуться на главную
-        </AppLink>
-      </div>
-    );
+    return <FormaSuccess />;
   }
+
+  const phoneValidation = {
+    required: "Поле не заполнено",
+    pattern: {
+      value: /^\+7 \(\d{3}\) \d{3}-\d{2}-\d{2}$/,
+      message: "Номер введен не корректно",
+    },
+  };
 
   return (
     <div>
@@ -88,17 +87,20 @@ export function Forma() {
             )}
           </div>
           <div className={styles.formblock}>
-            <input
-              type="tel"
-              placeholder=" "
-              className={errors.phone ? styles.errorinput : ""}
-              {...register("phone", {
-                required: "Поле не заполнено",
-                pattern: {
-                  value: /^(\s*)?(\+)?([- _():=+]?\d[- _():=+]?){10,14}(\s*)?$/,
-                  message: "Номер введен не корректно",
-                },
-              })}
+            <Controller
+              name="phone"
+              control={control}
+              rules={phoneValidation}
+              render={({ field: { onChange, value } }) => (
+                <IMaskInput
+                  mask="+7 (000) 000-00-00"
+                  type="tel"
+                  placeholder=" "
+                  className={errors.phone ? styles.errorinput : ""}
+                  value={value || ""}
+                  onAccept={(value: string) => onChange(value)}
+                />
+              )}
             />
             <label>Телефон</label>
             {errors.phone && (

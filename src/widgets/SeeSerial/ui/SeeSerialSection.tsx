@@ -4,7 +4,7 @@ import cover from "./cover.jpg";
 
 export function SeeSerialSection() {
   const stylesObj = {
-    backgroundImage: `linear-gradient(270deg, rgba(0, 0, 0, 0.4) 0%, rgba(0, 0, 0, 0.4) 100%), url(${cover})`,
+    backgroundImage: `url(${cover})`,
   };
 
   return (
