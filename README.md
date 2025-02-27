@@ -1,5 +1,4 @@
 <p>Witcher-project</p>
-<p>Посмотреть проект: https://alina-np.github.io/loverflower/</p>
 
 <h2 tabindex="-1" class="heading-element" dir="auto">Технологии</h2>
 <ul dir="auto">
