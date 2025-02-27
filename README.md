@@ -8,5 +8,5 @@
 <li><strong>Redux Toolkit</strong> — библиотека для управления состоянием приложения.</li>
 <li><strong>React Hook Form</strong> — библиотека для валидации форм.</li>
 <li><strong>Css-module</strong> — подход к организации кода, позволяющий изолировать стили для каждого компонента.</li>
-<li><strong>Дополнительно:</strong> Swiper, React Imask</li>
+<li><strong>Дополнительно:</strong> Swiper, React Imask.</li>
 </ul>
