@@ -46,6 +46,12 @@ a {
   margin: 0 auto;
 }
 
+h1 {
+  font-weight: 600;
+  font-size: var(--font-header1-size);
+  line-height: 100%;
+}
+
 h2 {
   font-weight: 600;
   font-size: var(--font-header2-size);

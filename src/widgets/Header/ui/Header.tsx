@@ -8,19 +8,23 @@ export function Header() {
   const { pathname } = useLocation();
 
   return (
-    <header className={`${styles.header} container`}>
-      <div className={styles.logo}>
-        {location.pathname === "/" ? (
-          <img src={logoimg} alt="Лого" />
-        ) : (
-          <AppLink to="/">
+    <>
+      {location.pathname === "/" ? (
+        <header className={`${styles.header} container`}>
+          <div className={styles.logo}>
+            <img src={logoimg} alt="Лого" />
+          </div>
+          <AppLink to="/application" theme={AppLinkTheme.OPACITYTHIN}>
+            Подключить подписку
+          </AppLink>
+        </header>
+      ) : (
+        <header className={`${styles.header} container`}>
+          <AppLink to="/" className={styles.logo}>
             <img src={logoimg} alt="Лого" />
           </AppLink>
-        )}
-      </div>
-      <AppLink to="/application" theme={AppLinkTheme.OPACITYTHIN}>
-        Подключить подписку
-      </AppLink>
-    </header>
+        </header>
+      )}
+    </>
   );
 }
