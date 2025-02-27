@@ -1,7 +1,7 @@
 .applicationpage {
   margin: 40px auto 90px;
   display: flex;
-  gap: 20px;
+  gap: 50px;
   justify-content: space-between;
 }
 
@@ -28,7 +28,31 @@
 }
 
 @media (max-width: 1024px) {
+  .applicationpage {
+    margin: 30px auto 90px;
+  }
+  .socialscontainer {
+    margin-top: 65px;
+  }
+  .socials {
+    margin: 0 0 30px;
+  }
+  .socialstitle {
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 767px) {
+  .applicationpage {
+    flex-direction: column;
+    gap: 30px;
+    margin: 25px auto 40px;
+  }
+  .socialscontainer {
+    width: 100%;
+    margin-top: 0;
+  }
+  .socials {
+    margin: 0 0 20px;
+  }
 }

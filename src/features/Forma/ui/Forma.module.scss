@@ -117,7 +117,7 @@ select.errorinput {
 
 .checkbox {
   height: 56px;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   position: relative;
   display: flex;
   & input {
@@ -168,7 +168,7 @@ select.errorinput {
 }
 
 .file {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   & label {
     position: relative;
     top: 0;
@@ -197,5 +197,65 @@ select.errorinput {
   & p {
     position: absolute;
     bottom: -22px;
+  }
+}
+
+.success {
+  width: 455px;
+  margin-top: 105px;
+  line-height: 133%;
+  & p {
+    margin: 25px 0 40px;
+    font-size: var(--font-header4-size);
+    line-height: 125%;
+  }
+  & a {
+    width: 240px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .form {
+    width: 320px;
+    margin-top: 40px;
+    & button {
+      width: 100%;
+    }
+  }
+  .formblock {
+    margin-bottom: 25px;
+    & textarea {
+      height: 150px;
+    }
+  }
+  .halfwidth {
+    display: block;
+  }
+  .success {
+    width: 400px;
+    margin-top: 75px;
+    & h1 {
+      width: 90%;
+    }
+    & p {
+      margin: 25px 0 20px;
+      font-size: var(--font-text-size);
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .success {
+    width: 100%;
+    margin-top: 0;
+    & h1 {
+      width: 100%;
+    }
+    & p {
+      margin: 15px 0 30px;
+    }
+    & a {
+      width: 100%;
+    }
   }
 }

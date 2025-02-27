@@ -122,7 +122,9 @@ export function Forma() {
               type="file"
               {...register("fileField", { required: "Поле не заполнено" })}
             />
-            <p className={errors.fileField ? styles.errorinput : ""}>Прикрепите файл</p>
+            <p className={errors.fileField ? styles.errorinput : ""}>
+              Прикрепите файл
+            </p>
             <Icon type={IconType.FILE} />
           </label>
           {errors.fileField && (
@@ -134,7 +136,9 @@ export function Forma() {
             type="checkbox"
             {...register("checkField", { required: "Поле не заполнено" })}
           />
-          <label className={errors.checkField ? styles.errorinput : ""}>Даю согласие на обработку своих персональных данных</label>
+          <label className={errors.checkField ? styles.errorinput : ""}>
+            Даю согласие на обработку своих персональных данных
+          </label>
           {errors.checkField && (
             <p className={styles.error}>{errors.checkField.message}</p>
           )}
